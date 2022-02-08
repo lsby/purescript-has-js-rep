@@ -4,12 +4,20 @@
 in  upstream
   with has-js-rep =
       { dependencies =
-            [ "assert"
+            [ "aff-promise"
+            , "arrays"
+            , "console"
             , "effect"
+            , "foldable-traversable"
+            , "foreign-object"
+            , "functions"
+            , "nullable"
             , "prelude"
             , "psci-support"
-            , "record"
+            , "record-format"
+            , "strings"
             , "typelevel-prelude"
+            , "variant"
             ]
       , repo =
           "https://github.com/lsby/purescript-has-js-rep"
