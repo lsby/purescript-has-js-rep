@@ -12,7 +12,7 @@ import Foreign.Object as FO
 import Prim.RowList as RL
 import Prim.TypeError as TE
 
-class MembersHaveJSRep (rl :: RL.RowList)
+class MembersHaveJSRep (rl :: RL.RowList Type)
 instance nilMHJSR :: MembersHaveJSRep RL.Nil
 instance consMHJSR :: (MembersHaveJSRep tail, HasJSRep ty) => MembersHaveJSRep (RL.Cons name ty tail)
 
