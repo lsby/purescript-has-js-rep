@@ -16,13 +16,14 @@ in  upstream
             , "psci-support"
             , "record-format"
             , "strings"
+            , "tuples"
             , "typelevel-prelude"
             , "variant"
             ]
       , repo =
           "https://github.com/lsby/purescript-has-js-rep"
       , version =
-          "ls-v1.0.0"
+          "ls-v1.0.1"
       }
 ```
 

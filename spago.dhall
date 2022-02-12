@@ -24,6 +24,7 @@ to generate this file without the comments in this block.
   , "psci-support"
   , "record-format"
   , "strings"
+  , "tuples"
   , "typelevel-prelude"
   , "variant"
   ]

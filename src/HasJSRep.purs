@@ -7,6 +7,7 @@ import Data.Function.Uncurried as FU
 import Data.Nullable (Nullable)
 import Data.Variant (Variant)
 import Effect (Effect)
+import Data.Tuple (Tuple)
 import Effect.Uncurried as EU
 import Foreign.Object as FO
 import Prim.RowList as RL
@@ -31,6 +32,7 @@ else instance unitHJSR :: HasJSRep Unit
 
 -- more complex
 else instance arrayHJSR :: HasJSRep a => HasJSRep (Array a)
+else instance tupleHJSR :: (HasJSRep a, HasJSRep b) => HasJSRep (Tuple a b)
 else instance foObjectHJSR :: HasJSRep a => HasJSRep (FO.Object a)
 else instance promiseHJSR :: HasJSRep a => HasJSRep (Promise a)
 else instance recordHJSR :: (RL.RowToList r rl, MembersHaveJSRep rl) => HasJSRep (Record r)
