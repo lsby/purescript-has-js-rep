@@ -34,7 +34,7 @@ else instance unitHJSR :: HasJSRep Unit
 
 -- more complex
 else instance arrayHJSR :: HasJSRep a => HasJSRep (Array a)
-else instance tupleHJSR :: (HasJSRep a, HasJSRep b) => HasJSRep (Tuple a b)
+-- else instance tupleHJSR :: (HasJSRep a, HasJSRep b) => HasJSRep (Tuple a b)
 else instance foObjectHJSR :: HasJSRep a => HasJSRep (FO.Object a)
 else instance promiseHJSR :: HasJSRep a => HasJSRep (Promise a)
 else instance recordHJSR :: (RL.RowToList r rl, MembersHaveJSRep rl) => HasJSRep (Record r)
