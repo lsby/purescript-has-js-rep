@@ -207,4 +207,4 @@ instance iEUEffectFn9HJSR ::
   ) =>
   HasJSRep (EU.EffectFn9 a b c d e f g h i j)
 
-instance HasJSRep Foreign
+-- instance HasJSRep Foreign
